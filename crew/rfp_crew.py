@@ -1,7 +1,6 @@
 import os
 import json
 from crewai import Agent, Task, Crew, Process
-from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 
 # Get the absolute path of the project root folder
@@ -13,12 +12,12 @@ load_dotenv(os.path.join(PROJECT_ROOT, ".env"))
 
 
 def create_llm():
-    return ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",          # ← fixed model name
-        google_api_key=os.getenv("GEMINI_API_KEY"),
-        temperature=0.1,
-        convert_system_message_to_human=True
-    )
+    # CrewAI accepts an LLM model string directly for Agent.llm.
+    # Normalize env vars so providers that expect GOOGLE_API_KEY also work.
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if gemini_key and not os.getenv("GOOGLE_API_KEY"):
+        os.environ["GOOGLE_API_KEY"] = gemini_key
+    return "gemini/gemini-1.5-flash"
 
 
 def run_rfp_pipeline(rfp_file_path: str) -> dict:

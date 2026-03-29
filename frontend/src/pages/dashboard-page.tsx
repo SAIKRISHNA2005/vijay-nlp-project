@@ -16,11 +16,7 @@ export function DashboardPage() {
     <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }} className="space-y-5">
       <Card className="relative overflow-hidden border-[#dbccb7] bg-gradient-to-br from-[#fff8ea] via-[#fffdf7] to-[#e9f8f5]">
         <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#f4a259]/25 blur-xl" />
-        <div className="shine-pill absolute right-4 top-4 rounded-full bg-[#1f766f]/10 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-[#1f766f]">
-          Live workspace
-        </div>
-        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#8d99a7]">Overview</p>
-        <h1 className="mt-2 text-3xl font-semibold text-[#1f2937]">Dashboard</h1>
+        <h1 className="text-3xl font-semibold text-[#1f2937]">Dashboard</h1>
         <p className="mt-2 max-w-2xl text-sm text-[#5b6471]">
           Track recent RFP processing activity, check pipeline health, and jump directly into your next action.
         </p>

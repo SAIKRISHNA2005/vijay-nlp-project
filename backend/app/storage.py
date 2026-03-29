@@ -47,6 +47,15 @@ class JobStore:
             db = self._read()
             return db["jobs"].get(job_id)
 
+    def delete_job(self, job_id: str) -> dict[str, Any] | None:
+        with self._lock:
+            db = self._read()
+            deleted = db["jobs"].pop(job_id, None)
+            if deleted is None:
+                return None
+            self._write(db)
+            return deleted
+
     def update_job(self, job_id: str, updates: dict[str, Any]) -> dict[str, Any] | None:
         with self._lock:
             db = self._read()

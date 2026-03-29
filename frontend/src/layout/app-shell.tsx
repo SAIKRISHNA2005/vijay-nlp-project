@@ -14,7 +14,7 @@ const items = [
 
 export function AppShell() {
   return (
-    <div className="relative mx-auto grid min-h-screen w-full max-w-[1280px] gap-5 p-3 sm:p-5 lg:grid-cols-[260px_1fr] lg:p-7">
+    <div className="relative grid min-h-screen w-full gap-5 p-3 sm:p-5 lg:grid-cols-[260px_1fr] lg:p-7">
       <div className="pointer-events-none absolute left-1/2 top-0 h-44 w-44 -translate-x-1/2 rounded-full bg-[#f4a259]/20 blur-3xl" />
       <aside className="relative overflow-hidden rounded-3xl border border-[#e2d5c3] bg-[#fffcf6]/95 p-5 shadow-[0_20px_45px_-30px_rgba(17,24,39,0.7)]">
         <div className="pointer-events-none absolute -right-8 -top-8 h-28 w-28 rounded-full bg-[#f4a259]/30 blur-xl" />

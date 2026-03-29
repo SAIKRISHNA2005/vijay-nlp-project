@@ -262,6 +262,25 @@ def get_history() -> dict[str, Any]:
     return api_ok({"items": rows})
 
 
+@app.delete("/rfp/history/{job_id}")
+def delete_history_job(job_id: str) -> dict[str, Any]:
+    job = require_job(job_id)
+    if job["status"] in {"queued", "processing"}:
+        return api_error("JOB_BUSY", "Cannot delete a job while it is queued or processing")
+
+    deleted_upload = False
+    file_path = Path(job.get("file_path") or "")
+    if file_path.exists() and file_path.is_file():
+        file_path.unlink(missing_ok=True)
+        deleted_upload = True
+
+    deleted = store.delete_job(job_id)
+    if deleted is None:
+        return api_error("NOT_FOUND", f"Job '{job_id}' not found")
+
+    return api_ok({"id": job_id, "deleted": True, "deleted_upload": deleted_upload})
+
+
 @app.get("/rfp/stream/{job_id}")
 async def stream_status(job_id: str) -> StreamingResponse:
     _ = require_job(job_id)

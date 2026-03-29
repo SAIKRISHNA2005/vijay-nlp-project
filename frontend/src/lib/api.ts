@@ -62,3 +62,9 @@ export async function getHistory() {
   return req<{ items: JobSummary[] }>("/rfp/history");
 }
 
+export async function deleteHistoryJob(jobId: string) {
+  return req<{ id: string; deleted: boolean; deleted_upload: boolean }>(`/rfp/history/${jobId}`, {
+    method: "DELETE",
+  });
+}
+

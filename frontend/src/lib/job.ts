@@ -8,3 +8,7 @@ export function getLatestJobId() {
   return localStorage.getItem(KEY);
 }
 
+export function clearLatestJobId() {
+  localStorage.removeItem(KEY);
+}
+
