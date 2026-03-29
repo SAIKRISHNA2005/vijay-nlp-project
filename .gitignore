@@ -1,0 +1,19 @@
+# Secret keys — NEVER push this
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment — too large to push (500MB+)
+venv/
+
+# Output files — generated automatically, no need to push
+output/
+
+# VS Code settings
+.vscode/
+
+# Model cache — downloaded automatically
+.cache/

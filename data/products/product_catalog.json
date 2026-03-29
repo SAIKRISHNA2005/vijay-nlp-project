@@ -1,0 +1,67 @@
+[
+  {
+    "sku": "XLPE-4C-35SQMM-AL",
+    "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+    "voltage": "1.1kV",
+    "insulation": "XLPE",
+    "conductor": "Aluminium",
+    "armour": "Yes",
+    "sheath": "PVC",
+    "temperature": "90°C",
+    "standard": "IS 7098",
+    "cores": 4,
+    "cross_section": "35 sq.mm"
+  },
+  {
+    "sku": "XLPE-4C-50SQMM-AL",
+    "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+    "voltage": "1.1kV",
+    "insulation": "XLPE",
+    "conductor": "Aluminium",
+    "armour": "Yes",
+    "sheath": "PVC",
+    "temperature": "90°C",
+    "standard": "IS 7098",
+    "cores": 4,
+    "cross_section": "50 sq.mm"
+  },
+  {
+    "sku": "XLPE-3C-25SQMM-CU",
+    "name": "3 Core 25 Sq.mm Copper XLPE Cable",
+    "voltage": "1.1kV",
+    "insulation": "XLPE",
+    "conductor": "Copper",
+    "armour": "No",
+    "sheath": "PVC",
+    "temperature": "90°C",
+    "standard": "IS 7098",
+    "cores": 3,
+    "cross_section": "25 sq.mm"
+  },
+  {
+    "sku": "PVC-4C-16SQMM-AL",
+    "name": "4 Core 16 Sq.mm Aluminium PVC Cable",
+    "voltage": "1.1kV",
+    "insulation": "PVC",
+    "conductor": "Aluminium",
+    "armour": "Yes",
+    "sheath": "PVC",
+    "temperature": "70°C",
+    "standard": "IS 1554",
+    "cores": 4,
+    "cross_section": "16 sq.mm"
+  },
+  {
+    "sku": "XLPE-4C-70SQMM-AL",
+    "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+    "voltage": "1.1kV",
+    "insulation": "XLPE",
+    "conductor": "Aluminium",
+    "armour": "Yes",
+    "sheath": "PVC",
+    "temperature": "90°C",
+    "standard": "IS 7098",
+    "cores": 4,
+    "cross_section": "70 sq.mm"
+  }
+]

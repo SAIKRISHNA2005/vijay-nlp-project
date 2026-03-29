@@ -1,0 +1,30 @@
+REQUEST FOR PROPOSAL
+RFP No: GOVT/ELEC/2024/042
+Project Title: Underground Cable Supply for Smart City Phase II
+Deadline: 30 November 2024
+Issuing Authority: Municipal Corporation of Chennai
+
+SCOPE OF SUPPLY:
+Supply 500 meters of underground power cable.
+
+TECHNICAL SPECIFICATIONS:
+1. Voltage Grade: 1.1kV
+2. Number of Cores: 4 Core
+3. Conductor Material: Aluminium
+4. Cross Section: 35 sq.mm
+5. Insulation Type: XLPE
+6. Armouring: Required (Steel Wire Armoured)
+7. Outer Sheath: PVC
+8. Operating Temperature: 90°C
+9. Standard: IS 7098
+
+TESTING REQUIREMENTS:
+- High Voltage Test
+- Insulation Resistance Test
+- Conductor Resistance Test
+
+DELIVERY: 45 days from purchase order.
+Delivery Location: Chennai Municipal Depot, Anna Nagar.
+
+PAYMENT TERMS: 30% advance, 70% on delivery and inspection.
+WARRANTY: 2 years from date of supply.

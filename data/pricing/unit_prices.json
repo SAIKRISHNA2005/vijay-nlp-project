@@ -1,0 +1,7 @@
+{
+  "XLPE-4C-35SQMM-AL": { "price_per_meter": 185 },
+  "XLPE-4C-50SQMM-AL": { "price_per_meter": 240 },
+  "XLPE-3C-25SQMM-CU": { "price_per_meter": 310 },
+  "PVC-4C-16SQMM-AL":  { "price_per_meter": 120 },
+  "XLPE-4C-70SQMM-AL": { "price_per_meter": 350 }
+}

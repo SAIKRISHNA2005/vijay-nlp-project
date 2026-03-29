@@ -1,0 +1,983 @@
+{
+  "jobs": {
+    "0f6aeb19-96b8-43a2-9f77-6022b7c3463c": {
+      "id": "0f6aeb19-96b8-43a2-9f77-6022b7c3463c",
+      "filename": "sample_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\0f6aeb19-96b8-43a2-9f77-6022b7c3463c.txt",
+      "metadata": {
+        "project_name": "Smoke Test",
+        "client_name": "Internal",
+        "notes": null
+      },
+      "status": "failed",
+      "current_stage": "document_reading",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "File uploaded",
+          "timestamp": "2026-03-29T16:47:00.193137+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T16:47:13.445998+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "No module named 'crewai'",
+          "timestamp": "2026-03-29T16:47:13.571156+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "No module named 'crewai'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 17, in run_pipeline\n    from crew.rfp_crew import create_llm\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\crew\\rfp_crew.py\", line 3, in <module>\n    from crewai import Agent, Task, Crew, Process\nModuleNotFoundError: No module named 'crewai'\n"
+      },
+      "created_at": "2026-03-29T16:47:00.174168+00:00",
+      "updated_at": "2026-03-29T16:47:13.571183+00:00",
+      "started_at": "2026-03-29T16:47:13.481737+00:00",
+      "finished_at": "2026-03-29T16:47:13.504217+00:00"
+    },
+    "b623bbaa-b278-42ff-92f5-6b0cd92f537f": {
+      "id": "b623bbaa-b278-42ff-92f5-6b0cd92f537f",
+      "filename": "sample_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\b623bbaa-b278-42ff-92f5-6b0cd92f537f.txt",
+      "metadata": {
+        "project_name": "Smoke2",
+        "client_name": "Internal",
+        "notes": null
+      },
+      "status": "uploaded",
+      "current_stage": "document_reading",
+      "progress": 0,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "File uploaded",
+          "timestamp": "2026-03-29T16:57:00.905975+00:00"
+        }
+      ],
+      "result": null,
+      "error": null,
+      "created_at": "2026-03-29T16:57:00.853838+00:00",
+      "updated_at": "2026-03-29T16:57:00.905999+00:00"
+    },
+    "c1f50245-89f8-4ec7-8d05-94456b949947": {
+      "id": "c1f50245-89f8-4ec7-8d05-94456b949947",
+      "filename": "sample_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\c1f50245-89f8-4ec7-8d05-94456b949947.txt",
+      "metadata": {
+        "project_name": "Smoke2",
+        "client_name": "Internal",
+        "notes": null
+      },
+      "status": "failed",
+      "current_stage": "document_reading",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "File uploaded",
+          "timestamp": "2026-03-29T16:57:38.930212+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T16:57:50.934789+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "No module named 'pywintypes'",
+          "timestamp": "2026-03-29T16:57:53.218634+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "No module named 'pywintypes'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 17, in run_pipeline\n    from crew.rfp_crew import create_llm\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\crew\\rfp_crew.py\", line 3, in <module>\n    from crewai import Agent, Task, Crew, Process\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\__init__.py\", line 7, in <module>\n    from crewai.agent.core import Agent\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\agent\\__init__.py\", line 1, in <module>\n    from crewai.agent.core import Agent\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\agent\\core.py\", line 34, in <module>\n    from crewai.agent.planning_config import PlanningConfig\nModuleNotFoundError: No module named 'pywintypes'\n"
+      },
+      "created_at": "2026-03-29T16:57:38.913498+00:00",
+      "updated_at": "2026-03-29T16:57:53.218654+00:00",
+      "started_at": "2026-03-29T16:57:50.958719+00:00",
+      "finished_at": "2026-03-29T16:57:53.151710+00:00"
+    },
+    "ff6d40b5-7c8a-4960-ba29-1055a3d99658": {
+      "id": "ff6d40b5-7c8a-4960-ba29-1055a3d99658",
+      "filename": "sample_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\ff6d40b5-7c8a-4960-ba29-1055a3d99658.txt",
+      "metadata": {
+        "project_name": "Smoke3",
+        "client_name": "Internal",
+        "notes": null
+      },
+      "status": "failed",
+      "current_stage": "document_reading",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "File uploaded",
+          "timestamp": "2026-03-29T16:59:50.583707+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:00:04.376675+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "No module named 'pywintypes'",
+          "timestamp": "2026-03-29T17:00:04.576157+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "No module named 'pywintypes'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 17, in run_pipeline\n    from crew.rfp_crew import create_llm\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\crew\\rfp_crew.py\", line 3, in <module>\n    from crewai import Agent, Task, Crew, Process\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\__init__.py\", line 7, in <module>\n    from crewai.agent.core import Agent\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\agent\\__init__.py\", line 1, in <module>\n    from crewai.agent.core import Agent\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\agent\\core.py\", line 34, in <module>\n    from crewai.agent.planning_config import PlanningConfig\nModuleNotFoundError: No module named 'pywintypes'\n"
+      },
+      "created_at": "2026-03-29T16:59:50.530534+00:00",
+      "updated_at": "2026-03-29T17:00:04.576182+00:00",
+      "started_at": "2026-03-29T17:00:04.408883+00:00",
+      "finished_at": "2026-03-29T17:00:04.520480+00:00"
+    },
+    "b2d08fe2-41dc-460a-9615-f920500514b8": {
+      "id": "b2d08fe2-41dc-460a-9615-f920500514b8",
+      "filename": "sample_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\b2d08fe2-41dc-460a-9615-f920500514b8.txt",
+      "metadata": {
+        "project_name": "Smoke4",
+        "client_name": "Internal",
+        "notes": null
+      },
+      "status": "failed",
+      "current_stage": "document_reading",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "File uploaded",
+          "timestamp": "2026-03-29T17:01:34.181305+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:01:44.122213+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "No module named 'pywintypes'",
+          "timestamp": "2026-03-29T17:01:44.262847+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "No module named 'pywintypes'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 17, in run_pipeline\n    from crew.rfp_crew import create_llm\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\crew\\rfp_crew.py\", line 3, in <module>\n    from crewai import Agent, Task, Crew, Process\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\__init__.py\", line 7, in <module>\n    from crewai.agent.core import Agent\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\agent\\__init__.py\", line 1, in <module>\n    from crewai.agent.core import Agent\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\crewai\\agent\\core.py\", line 34, in <module>\n    from crewai.agent.planning_config import PlanningConfig\nModuleNotFoundError: No module named 'pywintypes'\n"
+      },
+      "created_at": "2026-03-29T17:01:34.148192+00:00",
+      "updated_at": "2026-03-29T17:01:44.262868+00:00",
+      "started_at": "2026-03-29T17:01:44.152701+00:00",
+      "finished_at": "2026-03-29T17:01:44.199260+00:00"
+    },
+    "b91ff860-adc4-47b0-9182-321a016f14b7": {
+      "id": "b91ff860-adc4-47b0-9182-321a016f14b7",
+      "filename": "pasted_b91ff860.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\b91ff860-adc4-47b0-9182-321a016f14b7.txt",
+      "metadata": {
+        "project_name": "Smoke Text",
+        "client_name": "Internal",
+        "notes": null,
+        "source": "pasted_text"
+      },
+      "status": "failed",
+      "current_stage": "document_reading",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Text content uploaded",
+          "timestamp": "2026-03-29T17:08:55.777515+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:08:55.832754+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "No module named 'langchain_google_genai'",
+          "timestamp": "2026-03-29T17:09:00.954341+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "No module named 'langchain_google_genai'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 31, in run_pipeline\n    from crew.rfp_crew import create_llm\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\crew\\rfp_crew.py\", line 4, in <module>\n    from langchain_google_genai import ChatGoogleGenerativeAI\nModuleNotFoundError: No module named 'langchain_google_genai'\n"
+      },
+      "created_at": "2026-03-29T17:08:55.759150+00:00",
+      "updated_at": "2026-03-29T17:09:00.954354+00:00",
+      "started_at": "2026-03-29T17:08:55.851730+00:00",
+      "finished_at": "2026-03-29T17:09:00.888987+00:00"
+    },
+    "3989a2ec-fcdc-4f17-990b-dc00b89bf540": {
+      "id": "3989a2ec-fcdc-4f17-990b-dc00b89bf540",
+      "filename": "pasted_3989a2ec.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\3989a2ec-fcdc-4f17-990b-dc00b89bf540.txt",
+      "metadata": {
+        "project_name": "Smoke Text",
+        "client_name": "Internal",
+        "notes": null,
+        "source": "pasted_text"
+      },
+      "status": "failed",
+      "current_stage": "document_reading",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Text content uploaded",
+          "timestamp": "2026-03-29T17:14:03.084581+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:14:03.141224+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "No module named 'sentence_transformers'",
+          "timestamp": "2026-03-29T17:14:34.331600+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "No module named 'sentence_transformers'",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 35, in run_pipeline\n    from tools.sku_matcher import find_top_skus\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\tools\\sku_matcher.py\", line 3, in <module>\n    from sentence_transformers import SentenceTransformer\nModuleNotFoundError: No module named 'sentence_transformers'\n"
+      },
+      "created_at": "2026-03-29T17:14:03.066111+00:00",
+      "updated_at": "2026-03-29T17:14:34.331619+00:00",
+      "started_at": "2026-03-29T17:14:03.167857+00:00",
+      "finished_at": "2026-03-29T17:14:34.300496+00:00"
+    },
+    "200c7506-4b3d-4565-b327-1484e8c7f282": {
+      "id": "200c7506-4b3d-4565-b327-1484e8c7f282",
+      "filename": "pasted_200c7506.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\200c7506-4b3d-4565-b327-1484e8c7f282.txt",
+      "metadata": {
+        "project_name": "Smoke Text",
+        "client_name": "Internal",
+        "notes": null,
+        "source": "pasted_text"
+      },
+      "status": "failed",
+      "current_stage": "proposal_generation",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Text content uploaded",
+          "timestamp": "2026-03-29T17:15:20.821839+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:15:20.890243+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "in_progress",
+          "message": "Reading document text",
+          "timestamp": "2026-03-29T17:15:47.245262+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "completed",
+          "message": "Document parsed",
+          "timestamp": "2026-03-29T17:15:47.326897+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "in_progress",
+          "message": "Extracting technical specs",
+          "timestamp": "2026-03-29T17:15:47.383349+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "completed",
+          "message": "Specs extracted",
+          "timestamp": "2026-03-29T17:15:47.440271+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "in_progress",
+          "message": "Matching SKUs against catalog",
+          "timestamp": "2026-03-29T17:15:47.493883+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "completed",
+          "message": "Recommended SKU: XLPE-4C-35SQMM-AL",
+          "timestamp": "2026-03-29T17:16:02.963761+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "in_progress",
+          "message": "Calculating pricing",
+          "timestamp": "2026-03-29T17:16:03.015268+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "completed",
+          "message": "Pricing computed",
+          "timestamp": "2026-03-29T17:16:03.064860+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "in_progress",
+          "message": "Generating proposal content",
+          "timestamp": "2026-03-29T17:16:03.112425+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "failed",
+          "message": "2 validation errors for Agent\nllm.str\n  Input should be a valid string [type=string_type, input_value=ChatGoogleGenerativeAI(pr...m_message_to_human=True), input_type=ChatGoogleGenerativeAI]\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\nllm.is-instance[BaseLLM]\n  Input should be an instance of BaseLLM [type=is_instance_of, input_value=ChatGoogleGenerativeAI(pr...m_message_to_human=True), input_type=ChatGoogleGenerativeAI]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of",
+          "timestamp": "2026-03-29T17:16:05.013144+00:00"
+        }
+      ],
+      "result": null,
+      "error": {
+        "message": "2 validation errors for Agent\nllm.str\n  Input should be a valid string [type=string_type, input_value=ChatGoogleGenerativeAI(pr...m_message_to_human=True), input_type=ChatGoogleGenerativeAI]\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\nllm.is-instance[BaseLLM]\n  Input should be an instance of BaseLLM [type=is_instance_of, input_value=ChatGoogleGenerativeAI(pr...m_message_to_human=True), input_type=ChatGoogleGenerativeAI]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of",
+        "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\main.py\", line 83, in run_job\n    result = run_pipeline(job[\"file_path\"], stage_logger)\n  File \"C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\app\\pipeline.py\", line 71, in run_pipeline\n    proposal_agent = Agent(\n        role=\"Senior Proposal Writer\",\n    ...<4 lines>...\n        allow_delegation=False,\n    )\n  File \"C:\\Users\\saikr\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\pydantic\\main.py\", line 253, in __init__\n    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)\npydantic_core._pydantic_core.ValidationError: 2 validation errors for Agent\nllm.str\n  Input should be a valid string [type=string_type, input_value=ChatGoogleGenerativeAI(pr...m_message_to_human=True), input_type=ChatGoogleGenerativeAI]\n    For further information visit https://errors.pydantic.dev/2.11/v/string_type\nllm.is-instance[BaseLLM]\n  Input should be an instance of BaseLLM [type=is_instance_of, input_value=ChatGoogleGenerativeAI(pr...m_message_to_human=True), input_type=ChatGoogleGenerativeAI]\n    For further information visit https://errors.pydantic.dev/2.11/v/is_instance_of\n"
+      },
+      "created_at": "2026-03-29T17:15:20.785408+00:00",
+      "updated_at": "2026-03-29T17:16:05.013166+00:00",
+      "started_at": "2026-03-29T17:15:20.917997+00:00",
+      "finished_at": "2026-03-29T17:16:04.952812+00:00"
+    },
+    "2c2d58ae-d800-4b1a-9a3c-92e7fb49032c": {
+      "id": "2c2d58ae-d800-4b1a-9a3c-92e7fb49032c",
+      "filename": "pasted_2c2d58ae.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\2c2d58ae-d800-4b1a-9a3c-92e7fb49032c.txt",
+      "metadata": {
+        "project_name": "Smoke Text",
+        "client_name": "Internal",
+        "notes": null,
+        "source": "pasted_text"
+      },
+      "status": "completed",
+      "current_stage": "proposal_generation",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Text content uploaded",
+          "timestamp": "2026-03-29T17:17:10.143691+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:17:10.227305+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "in_progress",
+          "message": "Reading document text",
+          "timestamp": "2026-03-29T17:17:25.989873+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "completed",
+          "message": "Document parsed",
+          "timestamp": "2026-03-29T17:17:26.065450+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "in_progress",
+          "message": "Extracting technical specs",
+          "timestamp": "2026-03-29T17:17:26.141466+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "completed",
+          "message": "Specs extracted",
+          "timestamp": "2026-03-29T17:17:26.221631+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "in_progress",
+          "message": "Matching SKUs against catalog",
+          "timestamp": "2026-03-29T17:17:26.288119+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "completed",
+          "message": "Recommended SKU: XLPE-4C-35SQMM-AL",
+          "timestamp": "2026-03-29T17:17:31.614669+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "in_progress",
+          "message": "Calculating pricing",
+          "timestamp": "2026-03-29T17:17:31.671462+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "completed",
+          "message": "Pricing computed",
+          "timestamp": "2026-03-29T17:17:31.721290+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "in_progress",
+          "message": "Generating proposal content",
+          "timestamp": "2026-03-29T17:17:31.776458+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "completed",
+          "message": "Proposal generated",
+          "timestamp": "2026-03-29T17:17:31.832292+00:00"
+        }
+      ],
+      "result": {
+        "specs": {
+          "voltage": "1.1KV",
+          "cores": 4,
+          "conductor": "Aluminium",
+          "cross_section": "35 sq.mm",
+          "insulation": "XLPE",
+          "armour": "Yes",
+          "standard": "IS 7098",
+          "quantity_meters": 100,
+          "tests_required": [
+            "High Voltage Test",
+            "Insulation Resistance Test"
+          ],
+          "project_title": "Test RFP"
+        },
+        "sku_recommendation": {
+          "sku": "XLPE-4C-35SQMM-AL",
+          "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+          "product": {
+            "sku": "XLPE-4C-35SQMM-AL",
+            "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+            "voltage": "1.1kV",
+            "insulation": "XLPE",
+            "conductor": "Aluminium",
+            "armour": "Yes",
+            "sheath": "PVC",
+            "temperature": "90\u00c2\u00b0C",
+            "standard": "IS 7098",
+            "cores": 4,
+            "cross_section": "35 sq.mm"
+          },
+          "semantic_similarity": 100.0,
+          "spec_match_percent": 100.0,
+          "combined_score": 100.0
+        },
+        "sku_alternatives": [
+          {
+            "sku": "XLPE-4C-70SQMM-AL",
+            "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+            "product": {
+              "sku": "XLPE-4C-70SQMM-AL",
+              "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+              "voltage": "1.1kV",
+              "insulation": "XLPE",
+              "conductor": "Aluminium",
+              "armour": "Yes",
+              "sheath": "PVC",
+              "temperature": "90\u00c2\u00b0C",
+              "standard": "IS 7098",
+              "cores": 4,
+              "cross_section": "70 sq.mm"
+            },
+            "semantic_similarity": 98.8,
+            "spec_match_percent": 100.0,
+            "combined_score": 99.3
+          },
+          {
+            "sku": "XLPE-4C-50SQMM-AL",
+            "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+            "product": {
+              "sku": "XLPE-4C-50SQMM-AL",
+              "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+              "voltage": "1.1kV",
+              "insulation": "XLPE",
+              "conductor": "Aluminium",
+              "armour": "Yes",
+              "sheath": "PVC",
+              "temperature": "90\u00c2\u00b0C",
+              "standard": "IS 7098",
+              "cores": 4,
+              "cross_section": "50 sq.mm"
+            },
+            "semantic_similarity": 98.5,
+            "spec_match_percent": 100.0,
+            "combined_score": 99.1
+          }
+        ],
+        "pricing": {
+          "sku": "XLPE-4C-35SQMM-AL",
+          "quantity_meters": 100,
+          "price_per_meter": 185,
+          "material_cost": 18500,
+          "test_breakdown": [
+            {
+              "test": "High Voltage Test",
+              "cost": 2500
+            },
+            {
+              "test": "Insulation Resistance Test",
+              "cost": 1500
+            }
+          ],
+          "total_test_cost": 4000,
+          "subtotal": 22500,
+          "gst_18_percent": 4050,
+          "grand_total": 26550
+        },
+        "proposal": {
+          "content": "1. Executive Summary\nWe are pleased to submit our response for the requested cable supply requirement.\n\n2. Scope of Supply\nRecommended SKU: XLPE-4C-35SQMM-AL\nQuantity: 100 meters\n\n3. Technical Compliance\nVoltage: 1.1KV\nCores: 4\nConductor: Aluminium\nInsulation: XLPE\nCross-section: 35 sq.mm\nStandard: IS 7098\n\n4. Recommended Product\nXLPE-4C-35SQMM-AL is selected as the best available catalog match based on semantic and exact-spec scoring.\n\n5. Pricing\nBase cost: Rs 18,500\nGST: Rs 4,050\nTesting: Rs 4,000\nGrand total: Rs 26,550\n\n6. Delivery Terms\nDelivery timeline and logistics will be aligned to project scheduling and dispatch approvals.\n\n7. Our Commitment\nWe commit to compliant supply, transparent commercial terms, and timely support throughout execution.\n",
+          "metadata": {
+            "recommended_sku": "XLPE-4C-35SQMM-AL"
+          }
+        }
+      },
+      "error": null,
+      "created_at": "2026-03-29T17:17:10.116840+00:00",
+      "updated_at": "2026-03-29T17:17:31.865341+00:00",
+      "started_at": "2026-03-29T17:17:10.261051+00:00",
+      "finished_at": "2026-03-29T17:17:31.836348+00:00"
+    },
+    "940709bb-08bf-495f-a455-4ed13be6aa09": {
+      "id": "940709bb-08bf-495f-a455-4ed13be6aa09",
+      "filename": "sample_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\940709bb-08bf-495f-a455-4ed13be6aa09.txt",
+      "metadata": {
+        "project_name": "Smoke File",
+        "client_name": "Internal",
+        "notes": null
+      },
+      "status": "completed",
+      "current_stage": "proposal_generation",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "File uploaded",
+          "timestamp": "2026-03-29T17:17:47.086182+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:17:47.210247+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "in_progress",
+          "message": "Reading document text",
+          "timestamp": "2026-03-29T17:17:47.314475+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "completed",
+          "message": "Document parsed",
+          "timestamp": "2026-03-29T17:17:47.407836+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "in_progress",
+          "message": "Extracting technical specs",
+          "timestamp": "2026-03-29T17:17:47.481178+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "completed",
+          "message": "Specs extracted",
+          "timestamp": "2026-03-29T17:17:47.550188+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "in_progress",
+          "message": "Matching SKUs against catalog",
+          "timestamp": "2026-03-29T17:17:47.610406+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "completed",
+          "message": "Recommended SKU: XLPE-4C-35SQMM-AL",
+          "timestamp": "2026-03-29T17:17:47.829797+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "in_progress",
+          "message": "Calculating pricing",
+          "timestamp": "2026-03-29T17:17:47.892170+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "completed",
+          "message": "Pricing computed",
+          "timestamp": "2026-03-29T17:17:47.957128+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "in_progress",
+          "message": "Generating proposal content",
+          "timestamp": "2026-03-29T17:17:48.023501+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "completed",
+          "message": "Proposal generated",
+          "timestamp": "2026-03-29T17:17:48.088332+00:00"
+        }
+      ],
+      "result": {
+        "specs": {
+          "voltage": "1.1KV",
+          "cores": 4,
+          "conductor": "Aluminium",
+          "cross_section": "35 sq.mm",
+          "insulation": "XLPE",
+          "armour": "Yes",
+          "standard": "IS 7098",
+          "quantity_meters": 500,
+          "tests_required": [
+            "High Voltage Test",
+            "Insulation Resistance Test",
+            "Conductor Resistance Test"
+          ],
+          "project_title": "Underground Cable Supply for Smart City Phase II"
+        },
+        "sku_recommendation": {
+          "sku": "XLPE-4C-35SQMM-AL",
+          "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+          "product": {
+            "sku": "XLPE-4C-35SQMM-AL",
+            "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+            "voltage": "1.1kV",
+            "insulation": "XLPE",
+            "conductor": "Aluminium",
+            "armour": "Yes",
+            "sheath": "PVC",
+            "temperature": "90\u00c2\u00b0C",
+            "standard": "IS 7098",
+            "cores": 4,
+            "cross_section": "35 sq.mm"
+          },
+          "semantic_similarity": 100.0,
+          "spec_match_percent": 100.0,
+          "combined_score": 100.0
+        },
+        "sku_alternatives": [
+          {
+            "sku": "XLPE-4C-70SQMM-AL",
+            "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+            "product": {
+              "sku": "XLPE-4C-70SQMM-AL",
+              "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+              "voltage": "1.1kV",
+              "insulation": "XLPE",
+              "conductor": "Aluminium",
+              "armour": "Yes",
+              "sheath": "PVC",
+              "temperature": "90\u00c2\u00b0C",
+              "standard": "IS 7098",
+              "cores": 4,
+              "cross_section": "70 sq.mm"
+            },
+            "semantic_similarity": 98.8,
+            "spec_match_percent": 100.0,
+            "combined_score": 99.3
+          },
+          {
+            "sku": "XLPE-4C-50SQMM-AL",
+            "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+            "product": {
+              "sku": "XLPE-4C-50SQMM-AL",
+              "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+              "voltage": "1.1kV",
+              "insulation": "XLPE",
+              "conductor": "Aluminium",
+              "armour": "Yes",
+              "sheath": "PVC",
+              "temperature": "90\u00c2\u00b0C",
+              "standard": "IS 7098",
+              "cores": 4,
+              "cross_section": "50 sq.mm"
+            },
+            "semantic_similarity": 98.5,
+            "spec_match_percent": 100.0,
+            "combined_score": 99.1
+          }
+        ],
+        "pricing": {
+          "sku": "XLPE-4C-35SQMM-AL",
+          "quantity_meters": 500,
+          "price_per_meter": 185,
+          "material_cost": 92500,
+          "test_breakdown": [
+            {
+              "test": "High Voltage Test",
+              "cost": 2500
+            },
+            {
+              "test": "Insulation Resistance Test",
+              "cost": 1500
+            },
+            {
+              "test": "Conductor Resistance Test",
+              "cost": 1200
+            }
+          ],
+          "total_test_cost": 5200,
+          "subtotal": 97700,
+          "gst_18_percent": 17586,
+          "grand_total": 115286
+        },
+        "proposal": {
+          "content": "1. Executive Summary\nWe are pleased to submit our response for the requested cable supply requirement.\n\n2. Scope of Supply\nRecommended SKU: XLPE-4C-35SQMM-AL\nQuantity: 500 meters\n\n3. Technical Compliance\nVoltage: 1.1KV\nCores: 4\nConductor: Aluminium\nInsulation: XLPE\nCross-section: 35 sq.mm\nStandard: IS 7098\n\n4. Recommended Product\nXLPE-4C-35SQMM-AL is selected as the best available catalog match based on semantic and exact-spec scoring.\n\n5. Pricing\nBase cost: Rs 92,500\nGST: Rs 17,586\nTesting: Rs 5,200\nGrand total: Rs 115,286\n\n6. Delivery Terms\nDelivery timeline and logistics will be aligned to project scheduling and dispatch approvals.\n\n7. Our Commitment\nWe commit to compliant supply, transparent commercial terms, and timely support throughout execution.\n",
+          "metadata": {
+            "recommended_sku": "XLPE-4C-35SQMM-AL"
+          }
+        }
+      },
+      "error": null,
+      "created_at": "2026-03-29T17:17:47.051714+00:00",
+      "updated_at": "2026-03-29T17:17:48.119873+00:00",
+      "started_at": "2026-03-29T17:17:47.240717+00:00",
+      "finished_at": "2026-03-29T17:17:48.092579+00:00"
+    },
+    "09a133c8-441a-493a-b8e0-d1d86510c0c1": {
+      "id": "09a133c8-441a-493a-b8e0-d1d86510c0c1",
+      "filename": "pasted_rfp.txt",
+      "file_path": "C:\\Users\\saikr\\OneDrive\\Desktop\\vijay-nlp-project\\backend\\data\\uploads\\09a133c8-441a-493a-b8e0-d1d86510c0c1.txt",
+      "metadata": {
+        "project_name": "",
+        "client_name": "",
+        "notes": "",
+        "source": "pasted_text"
+      },
+      "status": "completed",
+      "current_stage": "proposal_generation",
+      "progress": 100,
+      "timeline": [
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Text content uploaded",
+          "timestamp": "2026-03-29T17:18:00.571651+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "pending",
+          "message": "Job queued",
+          "timestamp": "2026-03-29T17:18:00.647668+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "in_progress",
+          "message": "Reading document text",
+          "timestamp": "2026-03-29T17:18:00.744907+00:00"
+        },
+        {
+          "stage": "document_reading",
+          "status": "completed",
+          "message": "Document parsed",
+          "timestamp": "2026-03-29T17:18:00.820976+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "in_progress",
+          "message": "Extracting technical specs",
+          "timestamp": "2026-03-29T17:18:00.885942+00:00"
+        },
+        {
+          "stage": "spec_extraction",
+          "status": "completed",
+          "message": "Specs extracted",
+          "timestamp": "2026-03-29T17:18:00.947090+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "in_progress",
+          "message": "Matching SKUs against catalog",
+          "timestamp": "2026-03-29T17:18:01.026238+00:00"
+        },
+        {
+          "stage": "sku_matching",
+          "status": "completed",
+          "message": "Recommended SKU: XLPE-4C-35SQMM-AL",
+          "timestamp": "2026-03-29T17:18:01.295921+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "in_progress",
+          "message": "Calculating pricing",
+          "timestamp": "2026-03-29T17:18:01.381652+00:00"
+        },
+        {
+          "stage": "pricing_calculation",
+          "status": "completed",
+          "message": "Pricing computed",
+          "timestamp": "2026-03-29T17:18:01.458268+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "in_progress",
+          "message": "Generating proposal content",
+          "timestamp": "2026-03-29T17:18:01.531689+00:00"
+        },
+        {
+          "stage": "proposal_generation",
+          "status": "completed",
+          "message": "Proposal generated",
+          "timestamp": "2026-03-29T17:18:01.640243+00:00"
+        }
+      ],
+      "result": {
+        "specs": {
+          "voltage": "1.1KV",
+          "cores": 4,
+          "conductor": "Aluminium",
+          "cross_section": "35 sq.mm",
+          "insulation": "XLPE",
+          "armour": "Yes",
+          "standard": "IS 7098",
+          "quantity_meters": 500,
+          "tests_required": [
+            "High Voltage Test",
+            "Insulation Resistance Test",
+            "Conductor Resistance Test"
+          ],
+          "project_title": "Underground Cable Supply for Smart City Phase II"
+        },
+        "sku_recommendation": {
+          "sku": "XLPE-4C-35SQMM-AL",
+          "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+          "product": {
+            "sku": "XLPE-4C-35SQMM-AL",
+            "name": "4 Core 35 Sq.mm Aluminium XLPE Cable",
+            "voltage": "1.1kV",
+            "insulation": "XLPE",
+            "conductor": "Aluminium",
+            "armour": "Yes",
+            "sheath": "PVC",
+            "temperature": "90\u00c2\u00b0C",
+            "standard": "IS 7098",
+            "cores": 4,
+            "cross_section": "35 sq.mm"
+          },
+          "semantic_similarity": 100.0,
+          "spec_match_percent": 100.0,
+          "combined_score": 100.0
+        },
+        "sku_alternatives": [
+          {
+            "sku": "XLPE-4C-70SQMM-AL",
+            "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+            "product": {
+              "sku": "XLPE-4C-70SQMM-AL",
+              "name": "4 Core 70 Sq.mm Aluminium XLPE Cable",
+              "voltage": "1.1kV",
+              "insulation": "XLPE",
+              "conductor": "Aluminium",
+              "armour": "Yes",
+              "sheath": "PVC",
+              "temperature": "90\u00c2\u00b0C",
+              "standard": "IS 7098",
+              "cores": 4,
+              "cross_section": "70 sq.mm"
+            },
+            "semantic_similarity": 98.8,
+            "spec_match_percent": 100.0,
+            "combined_score": 99.3
+          },
+          {
+            "sku": "XLPE-4C-50SQMM-AL",
+            "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+            "product": {
+              "sku": "XLPE-4C-50SQMM-AL",
+              "name": "4 Core 50 Sq.mm Aluminium XLPE Cable",
+              "voltage": "1.1kV",
+              "insulation": "XLPE",
+              "conductor": "Aluminium",
+              "armour": "Yes",
+              "sheath": "PVC",
+              "temperature": "90\u00c2\u00b0C",
+              "standard": "IS 7098",
+              "cores": 4,
+              "cross_section": "50 sq.mm"
+            },
+            "semantic_similarity": 98.5,
+            "spec_match_percent": 100.0,
+            "combined_score": 99.1
+          }
+        ],
+        "pricing": {
+          "sku": "XLPE-4C-35SQMM-AL",
+          "quantity_meters": 500,
+          "price_per_meter": 185,
+          "material_cost": 92500,
+          "test_breakdown": [
+            {
+              "test": "High Voltage Test",
+              "cost": 2500
+            },
+            {
+              "test": "Insulation Resistance Test",
+              "cost": 1500
+            },
+            {
+              "test": "Conductor Resistance Test",
+              "cost": 1200
+            }
+          ],
+          "total_test_cost": 5200,
+          "subtotal": 97700,
+          "gst_18_percent": 17586,
+          "grand_total": 115286
+        },
+        "proposal": {
+          "content": "1. Executive Summary\nWe are pleased to submit our response for the requested cable supply requirement.\n\n2. Scope of Supply\nRecommended SKU: XLPE-4C-35SQMM-AL\nQuantity: 500 meters\n\n3. Technical Compliance\nVoltage: 1.1KV\nCores: 4\nConductor: Aluminium\nInsulation: XLPE\nCross-section: 35 sq.mm\nStandard: IS 7098\n\n4. Recommended Product\nXLPE-4C-35SQMM-AL is selected as the best available catalog match based on semantic and exact-spec scoring.\n\n5. Pricing\nBase cost: Rs 92,500\nGST: Rs 17,586\nTesting: Rs 5,200\nGrand total: Rs 115,286\n\n6. Delivery Terms\nDelivery timeline and logistics will be aligned to project scheduling and dispatch approvals.\n\n7. Our Commitment\nWe commit to compliant supply, transparent commercial terms, and timely support throughout execution.\n",
+          "metadata": {
+            "recommended_sku": "XLPE-4C-35SQMM-AL"
+          }
+        }
+      },
+      "error": null,
+      "created_at": "2026-03-29T17:18:00.530046+00:00",
+      "updated_at": "2026-03-29T17:18:01.685361+00:00",
+      "started_at": "2026-03-29T17:18:00.674083+00:00",
+      "finished_at": "2026-03-29T17:18:01.654603+00:00"
+    }
+  }
+}

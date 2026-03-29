@@ -1,0 +1,7 @@
+{
+  "High Voltage Test":          { "price": 2500 },
+  "Insulation Resistance Test": { "price": 1500 },
+  "Conductor Resistance Test":  { "price": 1200 },
+  "Tensile Strength Test":      { "price": 3000 },
+  "Bend Test":                  { "price": 800 }
+}
