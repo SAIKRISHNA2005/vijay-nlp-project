@@ -7,12 +7,18 @@ export function StatusBadge({
 }: HTMLAttributes<HTMLSpanElement> & { status: string }) {
   const tone =
     status === "completed"
-      ? "bg-emerald-500/20 text-emerald-300"
+      ? "bg-emerald-100 text-emerald-700"
       : status === "failed"
-        ? "bg-red-500/20 text-red-300"
-        : "bg-amber-500/20 text-amber-300";
+        ? "bg-rose-100 text-rose-700"
+        : "bg-amber-100 text-amber-700";
   return (
-    <span className={cn("rounded-full px-2 py-1 text-xs font-semibold uppercase tracking-wide", tone, className)}>
+    <span
+      className={cn(
+        "inline-flex items-center rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em]",
+        tone,
+        className,
+      )}
+    >
       {status}
     </span>
   );

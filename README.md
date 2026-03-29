@@ -10,17 +10,21 @@ An agentic AI system that automates the B2B RFP response workflow using CrewAI a
 - Generates a complete professional proposal using AI agents
 
 ## Tech Stack
-- Python 3.10
+- Python 3.13
 - CrewAI (multi-agent orchestration)
 - Google Gemini (LLM)
 - Sentence Transformers (semantic matching)
 - pdfplumber (PDF parsing)
+- FastAPI (API wrapper)
+- React + Vite + TypeScript (frontend)
 
 ## Setup
 ```bash
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
+cd frontend
+npm install
 ```
 
 Add your Gemini API key to `.env`:
@@ -38,18 +42,31 @@ python main.py
 
 ### Backend (FastAPI wrapper)
 ```bash
-pip install -r requirements.txt
-uvicorn backend.app.main:app --reload --port 8000
+uvicorn backend.app.main:app --port 8002
 ```
 
 ### Frontend (React + Vite + TypeScript)
 ```bash
 cd frontend
-npm install
-npm run dev
+npm run dev -- --host 127.0.0.1 --port 5175
 ```
 
-The frontend expects API base URL `http://127.0.0.1:8000`.
+The frontend uses API base URL:
+`http://127.0.0.1:8002`
+
+If `5175` is already used, Vite automatically picks the next port (for example `5176`).
+
+## Full Run Checklist
+1. Start backend:
+   - `uvicorn backend.app.main:app --port 8002`
+2. Start frontend:
+   - `cd frontend`
+   - `npm run dev -- --host 127.0.0.1 --port 5175`
+3. Open frontend URL shown in terminal (usually `http://127.0.0.1:5175` or `http://127.0.0.1:5176`).
+4. Go to **Upload RFP** and use either:
+   - Upload PDF/TXT file, or
+   - Paste RFP content
+5. Submit, then track progress in **Processing**, and view outputs in **Results** and **Proposal**.
 
 ## Project Structure
 ```

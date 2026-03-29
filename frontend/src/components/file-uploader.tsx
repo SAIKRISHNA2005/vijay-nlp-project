@@ -12,10 +12,10 @@ export function FileUploader({
 }) {
   const ref = useRef<HTMLInputElement>(null);
   return (
-    <Card className="border-dashed text-center">
-      <div className="flex flex-col items-center gap-3 p-4">
-        <UploadCloud className="h-8 w-8 text-cyan-300" />
-        <p className="text-sm text-slate-300">{file ? file.name : "Drop PDF/TXT file here or pick manually"}</p>
+    <Card className="border-dashed border-[#ddcfbb] bg-[#fffcf6] text-center">
+      <div className="flex flex-col items-center gap-3 p-5">
+        <UploadCloud className="h-9 w-9 text-[var(--primary)]" />
+        <p className="text-sm text-[#374151]">{file ? file.name : "Drop PDF/TXT file here or pick manually"}</p>
         <input
           ref={ref}
           type="file"

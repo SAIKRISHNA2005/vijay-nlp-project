@@ -1,24 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
-  --background: #070b14;
-  --foreground: #d5dde8;
-  --card: #111827;
-  --muted: #94a3b8;
-  --border: #243244;
-  --primary: #38bdf8;
+  --background: #f7f2e8;
+  --foreground: #1f2937;
+  --card: #fffdf8;
+  --muted: #6b7280;
+  --border: #e6dccd;
+  --primary: #087e8b;
+  --primary-contrast: #f5fff9;
+  --accent: #f4a259;
+  --accent-foreground: #51330e;
+}
+
+@keyframes floatAura {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.05);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes pulseShine {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.55;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 * {
+  box-sizing: border-box;
   border-color: var(--border);
 }
 
 body {
+  position: relative;
+  overflow-x: hidden;
   margin: 0;
-  font-family: Inter, "Segoe UI", sans-serif;
+  min-height: 100vh;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
   color: var(--foreground);
   background:
-    radial-gradient(circle at top right, rgba(56, 189, 248, 0.18), transparent 35%),
-    radial-gradient(circle at bottom left, rgba(14, 116, 144, 0.2), transparent 30%),
+    radial-gradient(circle at 10% 0%, rgba(244, 162, 89, 0.25), transparent 35%),
+    radial-gradient(circle at 100% 20%, rgba(8, 126, 139, 0.2), transparent 40%),
+    radial-gradient(circle at 10% 100%, rgba(83, 185, 164, 0.2), transparent 35%),
     var(--background);
+}
+
+body::before,
+body::after {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+  border-radius: 9999px;
+  filter: blur(36px);
+}
+
+body::before {
+  top: 16%;
+  right: -80px;
+  width: 240px;
+  height: 240px;
+  background: rgba(244, 162, 89, 0.2);
+  animation: floatAura 10s ease-in-out infinite;
+}
+
+body::after {
+  bottom: 6%;
+  left: -80px;
+  width: 280px;
+  height: 280px;
+  background: rgba(8, 126, 139, 0.2);
+  animation: floatAura 11.5s ease-in-out infinite reverse;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::selection {
+  background: rgba(8, 126, 139, 0.2);
+  color: #132027;
+}
+
+.shine-pill {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 25%, rgba(255, 255, 255, 0.45) 50%, transparent 75%);
+  transform: translateX(-100%);
+  animation: pulseShine 2.6s ease-in-out infinite;
 }

@@ -18,10 +18,10 @@ export function PipelineStepper({ currentStage }: { currentStage: string }) {
         const done = idx < currentIndex;
         const active = idx === currentIndex;
         return (
-          <Card key={step} className="flex items-center justify-between">
+          <Card key={step} className="flex items-center justify-between border-[#eadcc7] bg-[#fffdf8] py-3">
             <div className="flex items-center gap-2">
-              {done ? <CheckCircle2 className="h-4 w-4 text-emerald-300" /> : <CircleDashed className="h-4 w-4 text-slate-400" />}
-              <span className="text-sm capitalize text-slate-100">{step.replaceAll("_", " ")}</span>
+              {done ? <CheckCircle2 className="h-4 w-4 text-emerald-600" /> : <CircleDashed className="h-4 w-4 text-[#9ca3af]" />}
+              <span className="text-sm capitalize text-[#1f2937]">{step.replaceAll("_", " ")}</span>
             </div>
             <StatusBadge status={done ? "completed" : active ? "processing" : "pending"} />
           </Card>

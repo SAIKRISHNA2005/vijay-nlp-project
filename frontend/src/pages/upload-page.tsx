@@ -1,4 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "sonner";
@@ -51,16 +52,22 @@ export function UploadPage() {
   });
 
   return (
-    <div className="space-y-4">
-      <h1 className="text-2xl font-semibold">Upload RFP</h1>
-      <div className="flex gap-2">
+    <motion.div initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.35 }} className="space-y-5">
+      <Card className="border-[#ddcfbb] bg-gradient-to-br from-[#fff7e8] via-[#fffdf8] to-[#e9f7f4]">
+        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#8d99a7]">Intake</p>
+        <h1 className="mt-2 text-3xl font-semibold text-[#1f2937]">Upload RFP</h1>
+        <p className="mt-2 text-sm text-[#5b6471]">Submit a document or paste content to start extraction, matching, and pricing analysis.</p>
+      </Card>
+
+      <div className="flex flex-wrap gap-2">
         <Button variant={mode === "file" ? "default" : "secondary"} onClick={() => setMode("file")}>Upload PDF/TXT</Button>
         <Button variant={mode === "text" ? "default" : "secondary"} onClick={() => setMode("text")}>Paste Content</Button>
       </div>
+
       {mode === "file" ? (
         <FileUploader file={file} onChange={setFile} />
       ) : (
-        <Card>
+        <Card className="bg-[#fffaf2]">
           <Textarea
             placeholder="Paste full RFP content here..."
             rows={12}
@@ -69,7 +76,9 @@ export function UploadPage() {
           />
         </Card>
       )}
-      <Card className="grid gap-3">
+
+      <Card className="grid gap-3 border-[#ddcfbb] bg-[#fffcf7]">
+        <p className="text-xs font-semibold uppercase tracking-[0.12em] text-[#9ca3af]">Project context</p>
         <Input placeholder="Project name (optional)" value={project} onChange={(e) => setProject(e.target.value)} />
         <Input placeholder="Client name (optional)" value={client} onChange={(e) => setClient(e.target.value)} />
         <Textarea placeholder="Notes (optional)" rows={4} value={notes} onChange={(e) => setNotes(e.target.value)} />
@@ -77,7 +86,7 @@ export function UploadPage() {
           {mutation.isPending ? "Submitting..." : "Submit and Start Processing"}
         </Button>
       </Card>
-    </div>
+    </motion.div>
   );
 }
 

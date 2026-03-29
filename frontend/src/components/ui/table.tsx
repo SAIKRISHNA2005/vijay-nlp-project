@@ -13,14 +13,14 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: ReactNod
   }, [rows, sortDir, sortIndex]);
 
   return (
-    <div className="overflow-x-auto rounded-2xl border border-slate-800">
+    <div className="overflow-x-auto rounded-3xl border border-[var(--border)] bg-[color:var(--card)] shadow-[0_14px_35px_-22px_rgba(17,24,39,0.6)]">
       <table className="w-full text-sm">
-        <thead className="bg-slate-900/90 text-slate-300">
+        <thead className="bg-[#f7efe2] text-[#4b5563]">
           <tr>
             {headers.map((h, idx) => (
-              <th key={h} className="px-3 py-2 text-left">
+              <th key={h} className="px-4 py-3 text-left text-xs font-semibold uppercase tracking-[0.1em]">
                 <button
-                  className="cursor-pointer text-left"
+                  className="cursor-pointer text-left transition-colors hover:text-[#087e8b]"
                   onClick={() => {
                     if (sortIndex === idx) setSortDir(sortDir === "asc" ? "desc" : "asc");
                     else {
@@ -35,10 +35,10 @@ export function DataTable({ headers, rows }: { headers: string[]; rows: ReactNod
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody className="text-[#1f2937]">
           {sortedRows.map((row, idx) => (
-            <tr key={idx} className="border-t border-slate-800">
-              {row.map((cell, cidx) => <td key={`${idx}-${cidx}`} className="px-3 py-2">{cell}</td>)}
+            <tr key={idx} className="border-t border-[var(--border)] hover:bg-[#fff8ec]">
+              {row.map((cell, cidx) => <td key={`${idx}-${cidx}`} className="px-4 py-3">{cell}</td>)}
             </tr>
           ))}
         </tbody>
